@@ -1,2 +1,2 @@
 # PS_Expand-MgAdditionalProperties
-a simple helper function to convert the dictionary "AdditionalProperties" from various MS Graph cmdlets to an object
+A simple helper function to convert the dictionary "AdditionalProperties" returned by various MS Graph cmdlets (Get-MgUserMember, Get-MgUserOwnedDevice, ...) to an object. Timestamps, which MS Graph returns in the "2019-11-04T06:20:09Z" format will be automatically converted to [datetime] objects. This function can be turned of by providing a switch, if the original format is preferred.
