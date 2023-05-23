@@ -1,2 +1,2 @@
-# PS_Expand-MgAdditionalProperties
+# Expand-MgAdditionalProperties
 A simple pipeline aware helper function to convert the dictionary "AdditionalProperties" returned by various MS Graph cmdlets (`Get-MgUserMember`, `Get-MgUserOwnedDevice`, ...) to a classic (and case-insensitive!!!) `[PSCustomObject]` object for imho easier handling in code. Timestamps, which MS Graph returns in the "2019-11-04T06:20:09Z" format, will be automatically converted to `[datetime]` objects. This function can be turned of by providing the switch `-DoNotConvertToDateTime`, if the original format is preferred.
